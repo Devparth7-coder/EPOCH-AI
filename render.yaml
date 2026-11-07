@@ -1,0 +1,35 @@
+# Render blueprint: one web service (API + built SPA) + optional managed Postgres.
+# Free-tier friendly: the app also runs on SQLite if DATABASE_URL is omitted.
+services:
+  - type: web
+    name: epoch-ai
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/v1/system/health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: epoch-db
+          property: connectionString
+      - key: CORS_ORIGINS
+        value: https://epoch-ai.onrender.com
+      - key: BIFROST_BASE_URL
+        value: https://gateway.getbifrost.ai
+      - key: BIFROST_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: RATE_LIMIT_PER_MINUTE
+        value: "30"
+
+databases:
+  - name: epoch-db
+    plan: free
+    postgresMajorVersion: "16"

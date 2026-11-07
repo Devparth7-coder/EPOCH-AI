@@ -1,0 +1,8 @@
+{
+  "a": 1.468849,
+  "b": 1.017881,
+  "c": 0.01474,
+  "trained_on": "epoch-benchmark-v1",
+  "n": 114,
+  "brier_score": 0.142217
+}

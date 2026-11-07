@@ -1,0 +1,3098 @@
+{
+  "run_id": "20261107T052255Z",
+  "dataset": "epoch-benchmark-v1 (build_dataset.py)",
+  "dataset_size": 114,
+  "runtime_mode": "simulated",
+  "search_provider": "fixture (deterministic)",
+  "engine": "epoch-pipeline-v1",
+  "generated_at": "2026-11-07T05:22:55.390044+00:00",
+  "wall_clock_ms": 2055.62,
+  "epoch": {
+    "n": 114,
+    "accuracy": 0.8158,
+    "macro_precision": 0.845,
+    "macro_recall": 0.8118,
+    "macro_f1": 0.8188,
+    "outdated_detection_recall": 0.8387,
+    "false_verification_rate": 0.15,
+    "citation_correctness": 1.0,
+    "evidence_coverage": 1.0,
+    "mean_latency_ms": 14.0,
+    "cost_per_investigation_usd": 0.0,
+    "per_class": {
+      "VERIFIED": {
+        "support": 19,
+        "precision": 0.85,
+        "recall": 0.8947,
+        "f1": 0.8718
+      },
+      "PARTIALLY_OUTDATED": {
+        "support": 12,
+        "precision": 1.0,
+        "recall": 0.6667,
+        "f1": 0.8
+      },
+      "OUTDATED": {
+        "support": 19,
+        "precision": 0.7,
+        "recall": 0.7368,
+        "f1": 0.7179
+      },
+      "CONTRADICTED": {
+        "support": 26,
+        "precision": 0.76,
+        "recall": 0.7308,
+        "f1": 0.7451
+      },
+      "UNVERIFIED": {
+        "support": 19,
+        "precision": 0.76,
+        "recall": 1.0,
+        "f1": 0.8636
+      },
+      "CONFLICTING": {
+        "support": 19,
+        "precision": 1.0,
+        "recall": 0.8421,
+        "f1": 0.9143
+      }
+    },
+    "confusion": {
+      "VERIFIED": {
+        "VERIFIED": 17,
+        "PARTIALLY_OUTDATED": 0,
+        "OUTDATED": 0,
+        "CONTRADICTED": 2,
+        "UNVERIFIED": 0,
+        "CONFLICTING": 0
+      },
+      "PARTIALLY_OUTDATED": {
+        "VERIFIED": 0,
+        "PARTIALLY_OUTDATED": 8,
+        "OUTDATED": 4,
+        "CONTRADICTED": 0,
+        "UNVERIFIED": 0,
+        "CONFLICTING": 0
+      },
+      "OUTDATED": {
+        "VERIFIED": 1,
+        "PARTIALLY_OUTDATED": 0,
+        "OUTDATED": 14,
+        "CONTRADICTED": 2,
+        "UNVERIFIED": 2,
+        "CONFLICTING": 0
+      },
+      "CONTRADICTED": {
+        "VERIFIED": 1,
+        "PARTIALLY_OUTDATED": 0,
+        "OUTDATED": 2,
+        "CONTRADICTED": 19,
+        "UNVERIFIED": 4,
+        "CONFLICTING": 0
+      },
+      "UNVERIFIED": {
+        "VERIFIED": 0,
+        "PARTIALLY_OUTDATED": 0,
+        "OUTDATED": 0,
+        "CONTRADICTED": 0,
+        "UNVERIFIED": 19,
+        "CONFLICTING": 0
+      },
+      "CONFLICTING": {
+        "VERIFIED": 1,
+        "PARTIALLY_OUTDATED": 0,
+        "OUTDATED": 0,
+        "CONTRADICTED": 2,
+        "UNVERIFIED": 0,
+        "CONFLICTING": 16
+      }
+    }
+  },
+  "baseline": {
+    "n": 114,
+    "accuracy": 0.3246,
+    "macro_precision": 0.1228,
+    "macro_recall": 0.3246,
+    "macro_f1": 0.1743,
+    "outdated_detection_recall": 0.0,
+    "false_verification_rate": 0.7632,
+    "citation_correctness": 0.0,
+    "evidence_coverage": 1.0,
+    "mean_latency_ms": 0.0,
+    "cost_per_investigation_usd": 0.0,
+    "per_class": {
+      "VERIFIED": {
+        "support": 19,
+        "precision": 0.2368,
+        "recall": 0.9474,
+        "f1": 0.3789
+      },
+      "PARTIALLY_OUTDATED": {
+        "support": 12,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "OUTDATED": {
+        "support": 19,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "CONTRADICTED": {
+        "support": 26,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "UNVERIFIED": {
+        "support": 19,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "CONFLICTING": {
+        "support": 19,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "confusion": {
+      "VERIFIED": {
+        "VERIFIED": 18,
+        "PARTIALLY_OUTDATED": 0,
+        "OUTDATED": 0,
+        "CONTRADICTED": 0,
+        "UNVERIFIED": 1,
+        "CONFLICTING": 0
+      },
+      "PARTIALLY_OUTDATED": {
+        "VERIFIED": 9,
+        "PARTIALLY_OUTDATED": 0,
+        "OUTDATED": 0,
+        "CONTRADICTED": 0,
+        "UNVERIFIED": 3,
+        "CONFLICTING": 0
+      },
+      "OUTDATED": {
+        "VERIFIED": 19,
+        "PARTIALLY_OUTDATED": 0,
+        "OUTDATED": 0,
+        "CONTRADICTED": 0,
+        "UNVERIFIED": 0,
+        "CONFLICTING": 0
+      },
+      "CONTRADICTED": {
+        "VERIFIED": 12,
+        "PARTIALLY_OUTDATED": 0,
+        "OUTDATED": 0,
+        "CONTRADICTED": 0,
+        "UNVERIFIED": 14,
+        "CONFLICTING": 0
+      },
+      "UNVERIFIED": {
+        "VERIFIED": 0,
+        "PARTIALLY_OUTDATED": 0,
+        "OUTDATED": 0,
+        "CONTRADICTED": 0,
+        "UNVERIFIED": 19,
+        "CONFLICTING": 0
+      },
+      "CONFLICTING": {
+        "VERIFIED": 18,
+        "PARTIALLY_OUTDATED": 0,
+        "OUTDATED": 0,
+        "CONTRADICTED": 0,
+        "UNVERIFIED": 1,
+        "CONFLICTING": 0
+      }
+    }
+  },
+  "delta": {
+    "accuracy": 0.4912,
+    "macro_f1": 0.6445,
+    "outdated_detection_recall": 0.8387,
+    "false_verification_rate": -0.6132,
+    "citation_correctness": 1.0
+  },
+  "predictions": [
+    {
+      "id": "python_current",
+      "category": "current_information",
+      "claim": "Python 3.13 is the current stable release of Python and was published on October 7, 2024.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.7969,
+      "evidence_quality": 0.7168,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://peps.python.org/pep-0719/",
+        "https://docs.python.org/3/whatsnew/3.13.html"
+      ],
+      "citation_correct": true,
+      "latency_ms": 29.32,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 2 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "python_outdated",
+      "category": "outdated_information",
+      "claim": "Python 3.7 is the newest version of Python and is the release recommended for new projects.",
+      "gold": "OUTDATED",
+      "predicted": "CONTRADICTED",
+      "correct": false,
+      "confidence": 0.7106,
+      "evidence_quality": 0.3114,
+      "supporting": 0,
+      "contradicting": 3,
+      "cited_urls": [
+        "https://peps.python.org/pep-0719/",
+        "https://docs.python.org/3/whatsnew/3.13.html",
+        "https://medium.com/@devnotes/python-versions-explained"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.89,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence references version 3.12 while the claim asserts 3.7; the claim's version is behind the current release.; Evidence references version 3.12 while the claim asserts 3.7; the claim's version is behind the current release. (conflict type: polarity, version)."
+    },
+    {
+      "id": "python_contradicted",
+      "category": "contradictory_information",
+      "claim": "The official Python documentation states that Python 3.13 is not a supported release of Python.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.722,
+      "evidence_quality": 0.4112,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://peps.python.org/pep-0719/",
+        "https://docs.python.org/3/whatsnew/3.13.html"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.61,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False).; Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False). (conflict type: polarity)."
+    },
+    {
+      "id": "python_conflicting",
+      "category": "contradictory_information",
+      "claim": "Python 3.13 is the current stable release of Python.",
+      "gold": "CONFLICTING",
+      "predicted": "CONFLICTING",
+      "correct": true,
+      "confidence": 0.7395,
+      "evidence_quality": 0.6219,
+      "supporting": 2,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://peps.python.org/pep-0719/",
+        "https://docs.python.org/3/whatsnew/3.13.html",
+        "https://python-deprecation-watch.example.org/status",
+        "https://python-maintainers.example.net/notices"
+      ],
+      "citation_correct": true,
+      "latency_ms": 15.68,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources disagree. Supporting and contradicting evidence are both substantive and come from independent domains, and recency does not resolve the disagreement, so it is reported as unresolved rather than averaged away."
+    },
+    {
+      "id": "python_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The internal migration plan for Python 3.13 at the private deployment in Recife was approved by a committee of five engineers on 3 March.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 10.93,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "python_partial",
+      "category": "partially_outdated",
+      "claim": "Python 3.7 is the current stable release of Python and its support window ends in June 2023.",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "PARTIALLY_OUTDATED",
+      "correct": true,
+      "confidence": 0.7441,
+      "evidence_quality": 0.505,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://peps.python.org/pep-0719/",
+        "https://docs.python.org/3/whatsnew/3.13.html",
+        "https://devguide.python.org/versions/support-window"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.75,
+      "cost_usd": 0.0,
+      "explanation": "Part of the claim still holds, but the temporal layer found a material change: evidence now indicates 3.13 while the claim references 3.7. The surviving part is corroborated, so the claim is partially outdated rather than fully outdated."
+    },
+    {
+      "id": "react_current",
+      "category": "current_information",
+      "claim": "React 19 was released as a stable version on December 5, 2024.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.7939,
+      "evidence_quality": 0.6857,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://react.dev/blog/2024/12/05/react-19",
+        "https://github.com/facebook/react/releases"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.41,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 2 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "react_outdated",
+      "category": "outdated_information",
+      "claim": "React 18 is the latest major version of React.",
+      "gold": "OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": true,
+      "confidence": 0.7696,
+      "evidence_quality": 0.4752,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://react.dev/blog/2024/12/05/react-19",
+        "https://github.com/facebook/react/releases",
+        "https://medium.com/@frontendnotes/react-versions"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.49,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim references 18; current evidence indicates 19."
+    },
+    {
+      "id": "react_contradicted",
+      "category": "contradictory_information",
+      "claim": "The official React release notes state that React 19 was never shipped as a stable version.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7178,
+      "evidence_quality": 0.3722,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://react.dev/blog/2024/12/05/react-19",
+        "https://github.com/facebook/react/releases"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.81,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False).; Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False). (conflict type: polarity)."
+    },
+    {
+      "id": "react_conflicting",
+      "category": "contradictory_information",
+      "claim": "React 19 is the current major release of React.",
+      "gold": "CONFLICTING",
+      "predicted": "CONFLICTING",
+      "correct": true,
+      "confidence": 0.737,
+      "evidence_quality": 0.6081,
+      "supporting": 2,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://react.dev/blog/2024/12/05/react-19",
+        "https://react-deprecation-watch.example.org/status",
+        "https://react-maintainers.example.net/notices",
+        "https://github.com/facebook/react/releases"
+      ],
+      "citation_correct": true,
+      "latency_ms": 21.42,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources disagree. Supporting and contradicting evidence are both substantive and come from independent domains, and recency does not resolve the disagreement, so it is reported as unresolved rather than averaged away."
+    },
+    {
+      "id": "react_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The React migration at a private logistics company in Pune was approved by four engineers on 12 February.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 10.06,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "react_partial",
+      "category": "partially_outdated",
+      "claim": "React 18 is the current major version of React and its support window ends in December 2026.",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "PARTIALLY_OUTDATED",
+      "correct": true,
+      "confidence": 0.7428,
+      "evidence_quality": 0.448,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://react.dev/versions/support-window",
+        "https://react.dev/blog/2024/12/05/react-19",
+        "https://github.com/facebook/react/releases"
+      ],
+      "citation_correct": true,
+      "latency_ms": 15.5,
+      "cost_usd": 0.0,
+      "explanation": "Part of the claim still holds, but the temporal layer found a material change: evidence now indicates 19 while the claim references 18. The surviving part is corroborated, so the claim is partially outdated rather than fully outdated."
+    },
+    {
+      "id": "node_current",
+      "category": "current_information",
+      "claim": "Node.js 22 is the Active LTS release line of Node.js.",
+      "gold": "VERIFIED",
+      "predicted": "CONTRADICTED",
+      "correct": false,
+      "confidence": 0.7297,
+      "evidence_quality": 0.4814,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://nodejs.org/en/about/previous-releases",
+        "https://github.com/nodejs/Release"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.77,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=False, evidence negated=True).; Evidence asserts the opposite polarity to the claim (claim negated=False, evidence negated=True). (conflict type: polarity)."
+    },
+    {
+      "id": "node_outdated",
+      "category": "outdated_information",
+      "claim": "Node.js 18 is the newest LTS release of Node.js.",
+      "gold": "OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": true,
+      "confidence": 0.7742,
+      "evidence_quality": 0.4988,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://nodejs.org/en/about/previous-releases",
+        "https://github.com/nodejs/Release",
+        "https://medium.com/@nodedeveloper/lts-lines"
+      ],
+      "citation_correct": true,
+      "latency_ms": 15.47,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim references 18; current evidence indicates 22."
+    },
+    {
+      "id": "node_contradicted",
+      "category": "contradictory_information",
+      "claim": "The official Node.js release schedule states that Node.js 22 is not a supported release line.",
+      "gold": "CONTRADICTED",
+      "predicted": "VERIFIED",
+      "correct": false,
+      "confidence": 0.7813,
+      "evidence_quality": 0.5914,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://nodejs.org/en/about/previous-releases",
+        "https://github.com/nodejs/Release"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.36,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 2 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "node_conflicting",
+      "category": "contradictory_information",
+      "claim": "Node.js 22 is the Active LTS release of Node.js.",
+      "gold": "CONFLICTING",
+      "predicted": "CONTRADICTED",
+      "correct": false,
+      "confidence": 0.7228,
+      "evidence_quality": 0.4244,
+      "supporting": 0,
+      "contradicting": 4,
+      "cited_urls": [
+        "https://nodejs.org/en/about/previous-releases",
+        "https://node-deprecation-watch.example.org/status",
+        "https://node-maintainers.example.net/notices",
+        "https://github.com/nodejs/Release"
+      ],
+      "citation_correct": true,
+      "latency_ms": 15.23,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=False, evidence negated=True).; Evidence asserts the opposite polarity to the claim (claim negated=False, evidence negated=True). (conflict type: polarity)."
+    },
+    {
+      "id": "node_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The Node.js upgrade at a private bank in Hyderabad was signed off by a committee of seven engineers on 9 April.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 9.49,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "node_partial",
+      "category": "partially_outdated",
+      "claim": "Node.js 18 is the current LTS release of Node.js and its maintenance window ends in April 2025.",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "PARTIALLY_OUTDATED",
+      "correct": true,
+      "confidence": 0.7389,
+      "evidence_quality": 0.4492,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://nodejs.org/en/about/previous-releases/support-window",
+        "https://nodejs.org/en/about/previous-releases",
+        "https://github.com/nodejs/Release"
+      ],
+      "citation_correct": true,
+      "latency_ms": 15.62,
+      "cost_usd": 0.0,
+      "explanation": "Part of the claim still holds, but the temporal layer found a material change: evidence now indicates 22 while the claim references 18. The surviving part is corroborated, so the claim is partially outdated rather than fully outdated."
+    },
+    {
+      "id": "postgres_current",
+      "category": "current_information",
+      "claim": "PostgreSQL 17 was released on September 26, 2024 as the current major release.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.7958,
+      "evidence_quality": 0.6776,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://www.postgresql.org/support/versioning/",
+        "https://www.postgresql.org/about/news/postgresql-17-released-2936/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.21,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 1 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "postgres_outdated",
+      "category": "outdated_information",
+      "claim": "PostgreSQL 16 is the newest major release of PostgreSQL.",
+      "gold": "OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": true,
+      "confidence": 0.7802,
+      "evidence_quality": 0.5246,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.postgresql.org/support/versioning/",
+        "https://www.postgresql.org/about/news/postgresql-17-released-2936/",
+        "https://medium.com/@dbnotes/postgres-major-releases"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.89,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim references 16; current evidence indicates 17."
+    },
+    {
+      "id": "postgres_contradicted",
+      "category": "contradictory_information",
+      "claim": "The PostgreSQL release announcement states that PostgreSQL 17 was withdrawn and never released.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7217,
+      "evidence_quality": 0.4076,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.postgresql.org/support/versioning/",
+        "https://www.postgresql.org/about/news/postgresql-17-released-2936/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.08,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False).; Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False). (conflict type: polarity)."
+    },
+    {
+      "id": "postgres_conflicting",
+      "category": "contradictory_information",
+      "claim": "PostgreSQL 17 is the current major release of PostgreSQL.",
+      "gold": "CONFLICTING",
+      "predicted": "CONFLICTING",
+      "correct": true,
+      "confidence": 0.7368,
+      "evidence_quality": 0.5597,
+      "supporting": 2,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.postgresql.org/support/versioning/",
+        "https://www.postgresql.org/about/news/postgresql-17-released-2936/",
+        "https://postgres-deprecation-watch.example.org/status",
+        "https://postgres-maintainers.example.net/notices"
+      ],
+      "citation_correct": true,
+      "latency_ms": 15.45,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources disagree. Supporting and contradicting evidence are both substantive and come from independent domains, and recency does not resolve the disagreement, so it is reported as unresolved rather than averaged away."
+    },
+    {
+      "id": "postgres_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The PostgreSQL 17 rollout plan for a private hospital group in Kochi was approved internally on 14 May.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 10.35,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "postgres_partial",
+      "category": "partially_outdated",
+      "claim": "PostgreSQL 16 is the current major release of PostgreSQL and is supported until November 2028.",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "PARTIALLY_OUTDATED",
+      "correct": true,
+      "confidence": 0.7386,
+      "evidence_quality": 0.4568,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.postgresql.org/support/versioning/",
+        "https://www.postgresql.org/support/versioning/support-window",
+        "https://www.postgresql.org/about/news/postgresql-17-released-2936/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 16.45,
+      "cost_usd": 0.0,
+      "explanation": "Part of the claim still holds, but the temporal layer found a material change: evidence now indicates 17 while the claim references 16. The surviving part is corroborated, so the claim is partially outdated rather than fully outdated."
+    },
+    {
+      "id": "tailwind_current",
+      "category": "current_information",
+      "claim": "Tailwind CSS v4.0 was released on January 22, 2025 as the current major version.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.7943,
+      "evidence_quality": 0.6886,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://tailwindcss.com/blog/tailwindcss-v4",
+        "https://github.com/tailwindlabs/tailwindcss/releases"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.18,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 2 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "tailwind_outdated",
+      "category": "outdated_information",
+      "claim": "Tailwind CSS v3 is the current major version of the framework.",
+      "gold": "OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": true,
+      "confidence": 0.7666,
+      "evidence_quality": 0.4771,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://tailwindcss.com/blog/tailwindcss-v4",
+        "https://github.com/tailwindlabs/tailwindcss/releases",
+        "https://medium.com/@cssnotes/tailwind-versions"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.0,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim references v3; current evidence indicates v4.0."
+    },
+    {
+      "id": "tailwind_contradicted",
+      "category": "contradictory_information",
+      "claim": "The Tailwind CSS release notes state that v4.0 is not a supported release of the framework.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7202,
+      "evidence_quality": 0.3943,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://tailwindcss.com/blog/tailwindcss-v4",
+        "https://github.com/tailwindlabs/tailwindcss/releases"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.81,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False).; Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False). (conflict type: polarity)."
+    },
+    {
+      "id": "tailwind_conflicting",
+      "category": "contradictory_information",
+      "claim": "Tailwind CSS v4 is the current major version of the framework.",
+      "gold": "CONFLICTING",
+      "predicted": "CONFLICTING",
+      "correct": true,
+      "confidence": 0.7288,
+      "evidence_quality": 0.5463,
+      "supporting": 2,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://tailwind-deprecation-watch.example.org/status",
+        "https://tailwind-maintainers.example.net/notices",
+        "https://tailwindcss.com/blog/tailwindcss-v4",
+        "https://github.com/tailwindlabs/tailwindcss/releases"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.77,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources disagree. Supporting and contradicting evidence are both substantive and come from independent domains, and recency does not resolve the disagreement, so it is reported as unresolved rather than averaged away."
+    },
+    {
+      "id": "tailwind_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The Tailwind v4 design-system migration at a private retailer in Surat was approved by six designers on 6 June.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 9.58,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "tailwind_partial",
+      "category": "partially_outdated",
+      "claim": "Tailwind CSS v3 is the current major version and remains maintained for critical fixes through January 2027.",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": false,
+      "confidence": 0.7267,
+      "evidence_quality": 0.3722,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://tailwindcss.com/docs/upgrade-guide/support-window",
+        "https://tailwindcss.com/blog/tailwindcss-v4",
+        "https://github.com/tailwindlabs/tailwindcss/releases"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.74,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim references v3; current evidence indicates v4.0."
+    },
+    {
+      "id": "vite_current",
+      "category": "current_information",
+      "claim": "Vite 6 was released on November 26, 2024 as the current major version.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.7933,
+      "evidence_quality": 0.6822,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://vite.dev/blog/announcing-vite6",
+        "https://github.com/vitejs/vite/releases"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.95,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 2 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "vite_outdated",
+      "category": "outdated_information",
+      "claim": "Vite 5 is the current major version of the build tool.",
+      "gold": "OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": true,
+      "confidence": 0.7737,
+      "evidence_quality": 0.4613,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://vite.dev/blog/announcing-vite6",
+        "https://github.com/vitejs/vite/releases",
+        "https://medium.com/@buildnotes/vite-majors"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.03,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim references 5; current evidence indicates 6."
+    },
+    {
+      "id": "vite_contradicted",
+      "category": "contradictory_information",
+      "claim": "The Vite release announcement states that Vite 6 is not a supported major version.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7183,
+      "evidence_quality": 0.3766,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://vite.dev/blog/announcing-vite6",
+        "https://github.com/vitejs/vite/releases"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.81,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False).; Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False). (conflict type: polarity)."
+    },
+    {
+      "id": "vite_conflicting",
+      "category": "contradictory_information",
+      "claim": "Vite 6 is the current major version of the build tool.",
+      "gold": "CONFLICTING",
+      "predicted": "CONFLICTING",
+      "correct": true,
+      "confidence": 0.7279,
+      "evidence_quality": 0.5424,
+      "supporting": 2,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://vite-deprecation-watch.example.org/status",
+        "https://vite-maintainers.example.net/notices",
+        "https://vite.dev/blog/announcing-vite6",
+        "https://github.com/vitejs/vite/releases"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.58,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources disagree. Supporting and contradicting evidence are both substantive and come from independent domains, and recency does not resolve the disagreement, so it is reported as unresolved rather than averaged away."
+    },
+    {
+      "id": "vite_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The Vite 6 rollout at a private gaming studio in Indore was approved by three leads on 1 July.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 9.4,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "vite_partial",
+      "category": "partially_outdated",
+      "claim": "Vite 5 is the current major version of the build tool and continues to receive fixes through December 2026.",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": false,
+      "confidence": 0.7225,
+      "evidence_quality": 0.3344,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://vite.dev/guide/migration/support-window",
+        "https://vite.dev/blog/announcing-vite6",
+        "https://github.com/vitejs/vite/releases"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.73,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim references 5; current evidence indicates 6."
+    },
+    {
+      "id": "django_current",
+      "category": "current_information",
+      "claim": "Django 5.0 was released on December 4, 2023 as the current feature release.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.794,
+      "evidence_quality": 0.7159,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://www.djangoproject.com/download/",
+        "https://docs.djangoproject.com/en/5.0/releases/5.0/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.31,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 2 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "django_outdated",
+      "category": "outdated_information",
+      "claim": "Django 4.2 is the newest release of the Django framework.",
+      "gold": "OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": true,
+      "confidence": 0.7701,
+      "evidence_quality": 0.4646,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.djangoproject.com/download/",
+        "https://docs.djangoproject.com/en/5.0/releases/5.0/",
+        "https://medium.com/@pythonweb/django-releases"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.75,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim references 4.2; current evidence indicates 5.0."
+    },
+    {
+      "id": "django_contradicted",
+      "category": "contradictory_information",
+      "claim": "The Django release notes state that Django 5.0 is not a supported release of the framework.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7194,
+      "evidence_quality": 0.3859,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.djangoproject.com/download/",
+        "https://docs.djangoproject.com/en/5.0/releases/5.0/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.6,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False).; Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False). (conflict type: polarity)."
+    },
+    {
+      "id": "django_conflicting",
+      "category": "contradictory_information",
+      "claim": "Django 5.0 is the current feature release of Django.",
+      "gold": "CONFLICTING",
+      "predicted": "CONFLICTING",
+      "correct": true,
+      "confidence": 0.735,
+      "evidence_quality": 0.6036,
+      "supporting": 2,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://django-deprecation-watch.example.org/status",
+        "https://django-maintainers.example.net/notices",
+        "https://www.djangoproject.com/download/",
+        "https://docs.djangoproject.com/en/5.0/releases/5.0/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.52,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources disagree. Supporting and contradicting evidence are both substantive and come from independent domains, and recency does not resolve the disagreement, so it is reported as unresolved rather than averaged away."
+    },
+    {
+      "id": "django_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The Django 5.0 upgrade at a private logistics firm in Nagpur was approved by two engineers on 20 August.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 9.12,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "django_partial",
+      "category": "partially_outdated",
+      "claim": "Django 4.2 is the current feature release of Django and is supported until April 2026.",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "PARTIALLY_OUTDATED",
+      "correct": true,
+      "confidence": 0.7318,
+      "evidence_quality": 0.4343,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.djangoproject.com/download/",
+        "https://www.djangoproject.com/download/support-window",
+        "https://docs.djangoproject.com/en/5.0/releases/5.0/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.57,
+      "cost_usd": 0.0,
+      "explanation": "Part of the claim still holds, but the temporal layer found a material change: evidence now indicates 5.0 while the claim references 4.2. The surviving part is corroborated, so the claim is partially outdated rather than fully outdated."
+    },
+    {
+      "id": "kubernetes_current",
+      "category": "current_information",
+      "claim": "Kubernetes 1.30 was released on April 17, 2024 as a supported stable release.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.7918,
+      "evidence_quality": 0.6407,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://kubernetes.io/releases/",
+        "https://kubernetes.io/blog/2024/04/17/kubernetes-1-30-release/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.64,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 1 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "kubernetes_outdated",
+      "category": "outdated_information",
+      "claim": "Kubernetes 1.28 is the newest stable release of Kubernetes.",
+      "gold": "OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": true,
+      "confidence": 0.7771,
+      "evidence_quality": 0.4885,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://kubernetes.io/releases/",
+        "https://kubernetes.io/blog/2024/04/17/kubernetes-1-30-release/",
+        "https://medium.com/@cloudnotes/kubernetes-releases"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.45,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim references 1.28; current evidence indicates 1.30."
+    },
+    {
+      "id": "kubernetes_contradicted",
+      "category": "contradictory_information",
+      "claim": "The Kubernetes release team states that version 1.30 was withdrawn and is not supported.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7204,
+      "evidence_quality": 0.3952,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://kubernetes.io/releases/",
+        "https://kubernetes.io/blog/2024/04/17/kubernetes-1-30-release/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.2,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False).; Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False). (conflict type: polarity)."
+    },
+    {
+      "id": "kubernetes_conflicting",
+      "category": "contradictory_information",
+      "claim": "Kubernetes 1.30 is the current stable release of Kubernetes.",
+      "gold": "CONFLICTING",
+      "predicted": "CONFLICTING",
+      "correct": true,
+      "confidence": 0.7312,
+      "evidence_quality": 0.5271,
+      "supporting": 2,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://kubernetes.io/releases/",
+        "https://kubernetes.io/blog/2024/04/17/kubernetes-1-30-release/",
+        "https://kubernetes-deprecation-watch.example.org/status",
+        "https://kubernetes-maintainers.example.net/notices"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.21,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources disagree. Supporting and contradicting evidence are both substantive and come from independent domains, and recency does not resolve the disagreement, so it is reported as unresolved rather than averaged away."
+    },
+    {
+      "id": "kubernetes_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The Kubernetes 1.30 upgrade at a private telecom operator in Jaipur was approved by five SREs on 3 May.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 8.86,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "kubernetes_partial",
+      "category": "partially_outdated",
+      "claim": "Kubernetes 1.28 is the current stable release of Kubernetes and receives patch support until June 2025.",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "PARTIALLY_OUTDATED",
+      "correct": true,
+      "confidence": 0.7321,
+      "evidence_quality": 0.4159,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://kubernetes.io/releases/",
+        "https://kubernetes.io/releases/patch-releases/support-window",
+        "https://kubernetes.io/blog/2024/04/17/kubernetes-1-30-release/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.35,
+      "cost_usd": 0.0,
+      "explanation": "Part of the claim still holds, but the temporal layer found a material change: evidence now indicates 1.30 while the claim references 1.28. The surviving part is corroborated, so the claim is partially outdated rather than fully outdated."
+    },
+    {
+      "id": "ubuntu_current",
+      "category": "current_information",
+      "claim": "Ubuntu 24.04 LTS was released on April 25, 2024 as the current LTS release.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.7943,
+      "evidence_quality": 0.7134,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://wiki.ubuntu.com/Releases",
+        "https://ubuntu.com/blog/ubuntu-24-04-lts-released"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.34,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 2 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "ubuntu_outdated",
+      "category": "outdated_information",
+      "claim": "Ubuntu 22.04 LTS is the newest long-term-support release of Ubuntu.",
+      "gold": "OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": true,
+      "confidence": 0.7708,
+      "evidence_quality": 0.4857,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://wiki.ubuntu.com/Releases",
+        "https://ubuntu.com/blog/ubuntu-24-04-lts-released",
+        "https://medium.com/@linuxnotes/ubuntu-lts-cycle"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.82,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim references 22.04; current evidence indicates 24.04."
+    },
+    {
+      "id": "ubuntu_contradicted",
+      "category": "contradictory_information",
+      "claim": "The Ubuntu release team states that 24.04 LTS is not a supported release.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7208,
+      "evidence_quality": 0.399,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://wiki.ubuntu.com/Releases",
+        "https://ubuntu.com/blog/ubuntu-24-04-lts-released"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.86,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False).; Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False). (conflict type: polarity)."
+    },
+    {
+      "id": "ubuntu_conflicting",
+      "category": "contradictory_information",
+      "claim": "Ubuntu 24.04 LTS is the current LTS release of Ubuntu.",
+      "gold": "CONFLICTING",
+      "predicted": "CONFLICTING",
+      "correct": true,
+      "confidence": 0.7354,
+      "evidence_quality": 0.6038,
+      "supporting": 2,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://ubuntu-deprecation-watch.example.org/status",
+        "https://ubuntu-maintainers.example.net/notices",
+        "https://wiki.ubuntu.com/Releases",
+        "https://ubuntu.com/blog/ubuntu-24-04-lts-released"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.67,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources disagree. Supporting and contradicting evidence are both substantive and come from independent domains, and recency does not resolve the disagreement, so it is reported as unresolved rather than averaged away."
+    },
+    {
+      "id": "ubuntu_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The Ubuntu 24.04 rollout across a private manufacturing plant in Ludhiana was approved on 18 February.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 9.43,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "ubuntu_partial",
+      "category": "partially_outdated",
+      "claim": "Ubuntu 22.04 LTS is the current LTS release of Ubuntu and remains supported until April 2027.",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "PARTIALLY_OUTDATED",
+      "correct": true,
+      "confidence": 0.7307,
+      "evidence_quality": 0.4331,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://wiki.ubuntu.com/Releases",
+        "https://ubuntu.com/about/release-cycle/support-window",
+        "https://ubuntu.com/blog/ubuntu-24-04-lts-released"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.57,
+      "cost_usd": 0.0,
+      "explanation": "Part of the claim still holds, but the temporal layer found a material change: evidence now indicates 24.04 while the claim references 22.04. The surviving part is corroborated, so the claim is partially outdated rather than fully outdated."
+    },
+    {
+      "id": "java_current",
+      "category": "current_information",
+      "claim": "Java 21 is the current long-term-support release of Java.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.794,
+      "evidence_quality": 0.7146,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://www.oracle.com/java/technologies/java-se-support-roadmap.html",
+        "https://openjdk.org/projects/jdk/21/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.51,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 2 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "java_outdated",
+      "category": "outdated_information",
+      "claim": "Java 17 is the newest long-term-support release of Java.",
+      "gold": "OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": true,
+      "confidence": 0.7698,
+      "evidence_quality": 0.5038,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.oracle.com/java/technologies/java-se-support-roadmap.html",
+        "https://openjdk.org/projects/jdk/21/",
+        "https://medium.com/@javanotes/lts-releases"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.4,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim references 17; current evidence indicates 21."
+    },
+    {
+      "id": "java_contradicted",
+      "category": "contradictory_information",
+      "claim": "The OpenJDK release notes state that Java 21 is not a supported release of Java.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7193,
+      "evidence_quality": 0.3846,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.oracle.com/java/technologies/java-se-support-roadmap.html",
+        "https://openjdk.org/projects/jdk/21/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.6,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False).; Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False). (conflict type: polarity)."
+    },
+    {
+      "id": "java_conflicting",
+      "category": "contradictory_information",
+      "claim": "Java 21 is the current long-term-support release of Java.",
+      "gold": "CONFLICTING",
+      "predicted": "CONFLICTING",
+      "correct": true,
+      "confidence": 0.735,
+      "evidence_quality": 0.6023,
+      "supporting": 2,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://java-deprecation-watch.example.org/status",
+        "https://java-maintainers.example.net/notices",
+        "https://www.oracle.com/java/technologies/java-se-support-roadmap.html",
+        "https://openjdk.org/projects/jdk/21/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.61,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources disagree. Supporting and contradicting evidence are both substantive and come from independent domains, and recency does not resolve the disagreement, so it is reported as unresolved rather than averaged away."
+    },
+    {
+      "id": "java_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The Java 21 migration at a private insurer in Bhopal was approved by four architects on 8 April.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 9.24,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "java_partial",
+      "category": "partially_outdated",
+      "claim": "Java 17 is the current long-term-support release of Java and remains supported until September 2029.",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "PARTIALLY_OUTDATED",
+      "correct": true,
+      "confidence": 0.7293,
+      "evidence_quality": 0.4202,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.oracle.com/java/technologies/java-se-support-roadmap.html",
+        "https://www.oracle.com/java/technologies/java-se-support-roadmap.html/support-window",
+        "https://openjdk.org/projects/jdk/21/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.7,
+      "cost_usd": 0.0,
+      "explanation": "Part of the claim still holds, but the temporal layer found a material change: evidence now indicates 21 while the claim references 17. The surviving part is corroborated, so the claim is partially outdated rather than fully outdated."
+    },
+    {
+      "id": "http_current",
+      "category": "current_information",
+      "claim": "HTTP/3 is specified in RFC 9114, which was published in June 2022.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.7939,
+      "evidence_quality": 0.7,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://www.rfc-editor.org/rfc/rfc9114.html",
+        "https://www.ietf.org/blog/http3/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.62,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 2 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "http_outdated",
+      "category": "outdated_information",
+      "claim": "HTTP/2 is the newest version of the HTTP protocol.",
+      "gold": "OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": true,
+      "confidence": 0.7313,
+      "evidence_quality": 0.4156,
+      "supporting": 0,
+      "contradicting": 3,
+      "cited_urls": [
+        "https://www.rfc-editor.org/rfc/rfc9114.html",
+        "https://www.ietf.org/blog/http3/",
+        "https://medium.com/@webnotes/http-versions"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.55,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim references 2; current evidence indicates 3."
+    },
+    {
+      "id": "http_contradicted",
+      "category": "contradictory_information",
+      "claim": "The IETF states that RFC 9114 does not define HTTP/3.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7223,
+      "evidence_quality": 0.4131,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.rfc-editor.org/rfc/rfc9114.html",
+        "https://www.ietf.org/blog/http3/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.75,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False).; Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False). (conflict type: polarity)."
+    },
+    {
+      "id": "http_conflicting",
+      "category": "contradictory_information",
+      "claim": "HTTP/3 is the newest version of the HTTP protocol.",
+      "gold": "CONFLICTING",
+      "predicted": "CONFLICTING",
+      "correct": true,
+      "confidence": 0.7338,
+      "evidence_quality": 0.5847,
+      "supporting": 2,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.rfc-editor.org/rfc/rfc9114.html",
+        "https://www.ietf.org/blog/http3/",
+        "https://http-deprecation-watch.example.org/status",
+        "https://http-maintainers.example.net/notices"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.75,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources disagree. Supporting and contradicting evidence are both substantive and come from independent domains, and recency does not resolve the disagreement, so it is reported as unresolved rather than averaged away."
+    },
+    {
+      "id": "http_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The HTTP/3 rollout for a private streaming service in Gurugram was approved by two platform leads on 30 May.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 9.65,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "http_partial",
+      "category": "partially_outdated",
+      "claim": "HTTP/2 is the newest version of the HTTP protocol and remains widely deployed alongside newer versions.",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": false,
+      "confidence": 0.7263,
+      "evidence_quality": 0.3675,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.rfc-editor.org/rfc/rfc9114.html",
+        "https://www.ietf.org/blog/http3/",
+        "https://httpwg.org/specs/support-window"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.56,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim references 2; current evidence indicates 3."
+    },
+    {
+      "id": "tls_current",
+      "category": "current_information",
+      "claim": "TLS 1.3 is specified in RFC 8446, which was published in August 2018.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.7956,
+      "evidence_quality": 0.7265,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://www.rfc-editor.org/rfc/rfc8446.html",
+        "https://www.ietf.org/blog/tls13/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.73,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 2 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "tls_outdated",
+      "category": "outdated_information",
+      "claim": "TLS 1.2 is the newest version of the TLS protocol.",
+      "gold": "OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": true,
+      "confidence": 0.7597,
+      "evidence_quality": 0.4904,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.rfc-editor.org/rfc/rfc8446.html",
+        "https://www.ietf.org/blog/tls13/",
+        "https://medium.com/@secnotes/tls-versions"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.58,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim references 1.2; current evidence indicates 1.3."
+    },
+    {
+      "id": "tls_contradicted",
+      "category": "contradictory_information",
+      "claim": "The IETF states that RFC 8446 does not specify TLS 1.3.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7222,
+      "evidence_quality": 0.4121,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.rfc-editor.org/rfc/rfc8446.html",
+        "https://www.ietf.org/blog/tls13/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.77,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False).; Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False). (conflict type: polarity)."
+    },
+    {
+      "id": "tls_conflicting",
+      "category": "contradictory_information",
+      "claim": "TLS 1.3 is the newest version of the TLS protocol.",
+      "gold": "CONFLICTING",
+      "predicted": "CONFLICTING",
+      "correct": true,
+      "confidence": 0.7337,
+      "evidence_quality": 0.5838,
+      "supporting": 2,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.rfc-editor.org/rfc/rfc8446.html",
+        "https://www.ietf.org/blog/tls13/",
+        "https://tls-deprecation-watch.example.org/status",
+        "https://tls-maintainers.example.net/notices"
+      ],
+      "citation_correct": true,
+      "latency_ms": 15.5,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources disagree. Supporting and contradicting evidence are both substantive and come from independent domains, and recency does not resolve the disagreement, so it is reported as unresolved rather than averaged away."
+    },
+    {
+      "id": "tls_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The TLS 1.3 rollout for a private payments network in Chennai was approved by three security leads on 2 June.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 9.43,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "tls_partial",
+      "category": "partially_outdated",
+      "claim": "TLS 1.2 is the newest version of the TLS protocol and remains widely deployed alongside newer versions.",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": false,
+      "confidence": 0.7262,
+      "evidence_quality": 0.3666,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.rfc-editor.org/rfc/rfc8446.html",
+        "https://www.ietf.org/blog/tls13/",
+        "https://tlswg.org/support-window"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.86,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim references 1.2; current evidence indicates 1.3."
+    },
+    {
+      "id": "gpt4_current",
+      "category": "current_information",
+      "claim": "GPT-4 has a context window of 32,768 tokens.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.7752,
+      "evidence_quality": 0.6174,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://openai.com/index/gpt-4-research/",
+        "https://arxiv.org/abs/2303.08774"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.65,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 2 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "gpt4_outdated",
+      "category": "outdated_information",
+      "claim": "GPT-4 has a context window of 8,192 tokens.",
+      "gold": "OUTDATED",
+      "predicted": "CONTRADICTED",
+      "correct": false,
+      "confidence": 0.7586,
+      "evidence_quality": 0.4258,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://openai.com/index/gpt-4-research/",
+        "https://medium.com/@ainotes/context-windows",
+        "https://arxiv.org/abs/2303.08774"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.95,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Numeric disagreement: claim says 8,192, evidence says 32,768.; Numeric disagreement: claim says 8,192, evidence says 32,768. (conflict type: numeric)."
+    },
+    {
+      "id": "gpt4_contradicted",
+      "category": "contradictory_information",
+      "claim": "The GPT-4 technical report states that the model does not accept image inputs.",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED",
+      "correct": false,
+      "confidence": 0.4278,
+      "evidence_quality": 0.2062,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://openai.com/index/gpt-4-research/",
+        "https://arxiv.org/abs/2303.08774"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.33,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "gpt4_conflicting",
+      "category": "contradictory_information",
+      "claim": "GPT-4 has a context window of 32,768 tokens.",
+      "gold": "CONFLICTING",
+      "predicted": "CONFLICTING",
+      "correct": true,
+      "confidence": 0.7172,
+      "evidence_quality": 0.5638,
+      "supporting": 2,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://gpt4-deprecation-watch.example.org/status",
+        "https://gpt4-maintainers.example.net/notices",
+        "https://openai.com/index/gpt-4-research/",
+        "https://arxiv.org/abs/2303.08774"
+      ],
+      "citation_correct": true,
+      "latency_ms": 15.12,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources disagree. Supporting and contradicting evidence are both substantive and come from independent domains, and recency does not resolve the disagreement, so it is reported as unresolved rather than averaged away."
+    },
+    {
+      "id": "gpt4_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The GPT-4 evaluation at a private brokerage in Mumbai was signed off by nine analysts on 11 March.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 9.2,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "gpt4_contradicted2",
+      "category": "contradictory_information",
+      "claim": "The GPT-4 technical report states that the model has a context window of 1,024 tokens.",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED",
+      "correct": false,
+      "confidence": 0.4573,
+      "evidence_quality": 0.1221,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://openai.com/index/gpt-4-research/",
+        "https://arxiv.org/abs/2303.08774"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.6,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "everest_current",
+      "category": "current_information",
+      "claim": "Mount Everest is 8,848.86 metres tall according to the December 2020 joint survey.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.7916,
+      "evidence_quality": 0.6782,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://www.britannica.com/place/Mount-Everest",
+        "https://www.esa.int/Applications/Observing_the_Earth/Mount_Everest_remeasured"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.0,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 2 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "everest_outdated",
+      "category": "outdated_information",
+      "claim": "Mount Everest is 8,848 metres tall according to the official survey.",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED",
+      "correct": false,
+      "confidence": 0.7942,
+      "evidence_quality": 0.6939,
+      "supporting": 3,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://www.britannica.com/place/Mount-Everest",
+        "https://www.esa.int/Applications/Observing_the_Earth/Mount_Everest_remeasured",
+        "https://medium.com/@geography/mount-everest-height"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.15,
+      "cost_usd": 0.0,
+      "explanation": "3 source(s) across 3 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "everest_contradicted",
+      "category": "contradictory_information",
+      "claim": "The joint survey states that Mount Everest is not in the Himalayas.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7297,
+      "evidence_quality": 0.4793,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.britannica.com/place/Mount-Everest",
+        "https://www.esa.int/Applications/Observing_the_Earth/Mount_Everest_remeasured"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.89,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False).; Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False). (conflict type: polarity)."
+    },
+    {
+      "id": "everest_conflicting",
+      "category": "contradictory_information",
+      "claim": "Mount Everest is 8,848.86 metres tall.",
+      "gold": "CONFLICTING",
+      "predicted": "CONFLICTING",
+      "correct": true,
+      "confidence": 0.7378,
+      "evidence_quality": 0.6322,
+      "supporting": 2,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.britannica.com/place/Mount-Everest",
+        "https://www.esa.int/Applications/Observing_the_Earth/Mount_Everest_remeasured",
+        "https://everest-deprecation-watch.example.org/status",
+        "https://everest-maintainers.example.net/notices"
+      ],
+      "citation_correct": true,
+      "latency_ms": 15.18,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources disagree. Supporting and contradicting evidence are both substantive and come from independent domains, and recency does not resolve the disagreement, so it is reported as unresolved rather than averaged away."
+    },
+    {
+      "id": "everest_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The summit survey team for a private expedition in Kathmandu was approved by three sponsors on 4 April.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 9.26,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "everest_contradicted2",
+      "category": "contradictory_information",
+      "claim": "The joint survey reports that Mount Everest is 8,000 metres tall.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7237,
+      "evidence_quality": 0.4252,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.britannica.com/place/Mount-Everest",
+        "https://www.esa.int/Applications/Observing_the_Earth/Mount_Everest_remeasured"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.98,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Numeric disagreement: claim says 8,000m, evidence says 8,848.86m.; Numeric disagreement: claim says 8,000m, evidence says 8,848.86m. (conflict type: numeric)."
+    },
+    {
+      "id": "metre_current",
+      "category": "current_information",
+      "claim": "The metre is defined by fixing the speed of light in vacuum at 299 792 458 metres per second.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.7922,
+      "evidence_quality": 0.6835,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://www.bipm.org/en/publications/si-brochure",
+        "https://www.nist.gov/pml/owm/si-units-length"
+      ],
+      "citation_correct": true,
+      "latency_ms": 16.35,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 2 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "metre_outdated",
+      "category": "outdated_information",
+      "claim": "The metre is defined by the international prototype metre bar kept in Paris.",
+      "gold": "OUTDATED",
+      "predicted": "UNVERIFIED",
+      "correct": false,
+      "confidence": 0.3276,
+      "evidence_quality": 0.4925,
+      "supporting": 1,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://www.bipm.org/en/publications/si-brochure",
+        "https://www.nist.gov/pml/owm/si-units-length",
+        "https://medium.com/@physicsnotes/si-units"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.92,
+      "cost_usd": 0.0,
+      "explanation": "Retrieved evidence is related but does not directly confirm or refute the claim with sufficient quality."
+    },
+    {
+      "id": "metre_contradicted",
+      "category": "contradictory_information",
+      "claim": "The SI brochure states that the metre is not defined using the speed of light.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7337,
+      "evidence_quality": 0.5175,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.bipm.org/en/publications/si-brochure",
+        "https://www.nist.gov/pml/owm/si-units-length"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.15,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False).; Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False). (conflict type: polarity)."
+    },
+    {
+      "id": "metre_conflicting",
+      "category": "contradictory_information",
+      "claim": "The metre is defined by fixing the speed of light at 299 792 458 metres per second.",
+      "gold": "CONFLICTING",
+      "predicted": "CONFLICTING",
+      "correct": true,
+      "confidence": 0.7327,
+      "evidence_quality": 0.5719,
+      "supporting": 2,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.bipm.org/en/publications/si-brochure",
+        "https://www.nist.gov/pml/owm/si-units-length",
+        "https://metre-deprecation-watch.example.org/status",
+        "https://metre-maintainers.example.net/notices"
+      ],
+      "citation_correct": true,
+      "latency_ms": 15.36,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources disagree. Supporting and contradicting evidence are both substantive and come from independent domains, and recency does not resolve the disagreement, so it is reported as unresolved rather than averaged away."
+    },
+    {
+      "id": "metre_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The prototype bar comparison at a private calibration lab in Faridabad was approved by two metrologists on 22 January.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 9.49,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "metre_contradicted2",
+      "category": "contradictory_information",
+      "claim": "The SI brochure states that the metre is defined using the mass of the international prototype kilogram.",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED",
+      "correct": false,
+      "confidence": 0.4216,
+      "evidence_quality": 0.224,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://www.bipm.org/en/publications/si-brochure",
+        "https://www.nist.gov/pml/owm/si-units-length"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.59,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "euaiact_current",
+      "category": "current_information",
+      "claim": "The EU AI Act entered into force on August 1, 2024.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.7999,
+      "evidence_quality": 0.7941,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+        "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.73,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 2 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "euaiact_outdated",
+      "category": "outdated_information",
+      "claim": "The EU AI Act is a draft proposal and has not entered into force.",
+      "gold": "OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": true,
+      "confidence": 0.7702,
+      "evidence_quality": 0.5556,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+        "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+        "https://medium.com/@policybriefs/eu-ai-act"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.38,
+      "cost_usd": 0.0,
+      "explanation": "The claim matches evidence that was current at the time it was published, but newer credible evidence (3.3 years more recent) states a different value. The claim is outdated, not merely contradicted."
+    },
+    {
+      "id": "euaiact_contradicted",
+      "category": "contradictory_information",
+      "claim": "The European Union states that Regulation 2024/1689 was never adopted.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.725,
+      "evidence_quality": 0.4366,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+        "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.95,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False).; Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False). (conflict type: polarity)."
+    },
+    {
+      "id": "euaiact_conflicting",
+      "category": "contradictory_information",
+      "claim": "The EU AI Act entered into force on August 1, 2024.",
+      "gold": "CONFLICTING",
+      "predicted": "CONFLICTING",
+      "correct": true,
+      "confidence": 0.7417,
+      "evidence_quality": 0.6854,
+      "supporting": 2,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+        "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+        "https://euaiact-deprecation-watch.example.org/status",
+        "https://euaiact-maintainers.example.net/notices"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.47,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources disagree. Supporting and contradicting evidence are both substantive and come from independent domains, and recency does not resolve the disagreement, so it is reported as unresolved rather than averaged away."
+    },
+    {
+      "id": "euaiact_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The AI Act readiness review at a private lender in Delhi was approved by six compliance officers on 19 February.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 9.49,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "euaiact_contradicted2",
+      "category": "contradictory_information",
+      "claim": "The European Commission states that the EU AI Act was repealed in 2023 and is no longer in force.",
+      "gold": "CONTRADICTED",
+      "predicted": "OUTDATED",
+      "correct": false,
+      "confidence": 0.7346,
+      "evidence_quality": 0.4421,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+        "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.73,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim's time reference (2023) has been overtaken by evidence published in 2024."
+    },
+    {
+      "id": "gdpr_current",
+      "category": "current_information",
+      "claim": "The GDPR became applicable on May 25, 2018.",
+      "gold": "VERIFIED",
+      "predicted": "CONTRADICTED",
+      "correct": false,
+      "confidence": 0.7233,
+      "evidence_quality": 0.422,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+        "https://gdpr-info.eu/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.53,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=False, evidence negated=True).; Evidence asserts the opposite polarity to the claim (claim negated=False, evidence negated=True). (conflict type: polarity)."
+    },
+    {
+      "id": "gdpr_outdated",
+      "category": "outdated_information",
+      "claim": "The GDPR has been adopted but is not yet applicable.",
+      "gold": "OUTDATED",
+      "predicted": "UNVERIFIED",
+      "correct": false,
+      "confidence": 0.3354,
+      "evidence_quality": 0.4704,
+      "supporting": 1,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+        "https://gdpr-info.eu/",
+        "https://medium.com/@privacybriefs/gdpr-timeline"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.32,
+      "cost_usd": 0.0,
+      "explanation": "Retrieved evidence is related but does not directly confirm or refute the claim with sufficient quality."
+    },
+    {
+      "id": "gdpr_contradicted",
+      "category": "contradictory_information",
+      "claim": "The European Union states that Regulation 2016/679 is not in force.",
+      "gold": "CONTRADICTED",
+      "predicted": "OUTDATED",
+      "correct": false,
+      "confidence": 0.7267,
+      "evidence_quality": 0.3697,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+        "https://gdpr-info.eu/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 13.36,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim's time reference (2016) has been overtaken by evidence published in 2018."
+    },
+    {
+      "id": "gdpr_conflicting",
+      "category": "contradictory_information",
+      "claim": "The GDPR became applicable on May 25, 2018.",
+      "gold": "CONFLICTING",
+      "predicted": "CONTRADICTED",
+      "correct": false,
+      "confidence": 0.7184,
+      "evidence_quality": 0.3846,
+      "supporting": 0,
+      "contradicting": 4,
+      "cited_urls": [
+        "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+        "https://gdpr-deprecation-watch.example.org/status",
+        "https://gdpr-maintainers.example.net/notices",
+        "https://gdpr-info.eu/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.58,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=False, evidence negated=True).; Evidence asserts the opposite polarity to the claim (claim negated=False, evidence negated=True). (conflict type: polarity)."
+    },
+    {
+      "id": "gdpr_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The GDPR audit at a private clinic chain in Kochi was approved by two partners on 27 February.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 9.24,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "gdpr_contradicted2",
+      "category": "contradictory_information",
+      "claim": "The European Commission states that the GDPR was repealed in 2021 and no longer applies.",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED",
+      "correct": false,
+      "confidence": 0.4637,
+      "evidence_quality": 0.1038,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+        "https://gdpr-info.eu/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 12.94,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "who_current",
+      "category": "current_information",
+      "claim": "The WHO determined on May 5, 2023 that COVID-19 no longer constitutes a public health emergency of international concern.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.7937,
+      "evidence_quality": 0.6753,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://www.who.int/emergencies/diseases/novel-coronavirus-2019",
+        "https://www.who.int/news/item/05-05-2023-statement-on-the-fifteenth-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-coronavirus-disease-(covid-19)-pandemic"
+      ],
+      "citation_correct": true,
+      "latency_ms": 14.06,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 1 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "who_outdated",
+      "category": "outdated_information",
+      "claim": "COVID-19 constitutes a public health emergency of international concern.",
+      "gold": "OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": true,
+      "confidence": 0.7753,
+      "evidence_quality": 0.6381,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.who.int/emergencies/diseases/novel-coronavirus-2019",
+        "https://www.who.int/news/item/05-05-2023-statement-on-the-fifteenth-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-coronavirus-disease-(covid-19)-pandemic",
+        "https://medium.com/@healthnotes/pheic-timeline"
+      ],
+      "citation_correct": true,
+      "latency_ms": 15.65,
+      "cost_usd": 0.0,
+      "explanation": "The claim matches evidence that was current at the time it was published, but newer credible evidence (3.3 years more recent) states a different value. The claim is outdated, not merely contradicted."
+    },
+    {
+      "id": "who_contradicted",
+      "category": "contradictory_information",
+      "claim": "The WHO states that COVID-19 was never declared a public health emergency of international concern.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7376,
+      "evidence_quality": 0.5557,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.who.int/emergencies/diseases/novel-coronavirus-2019",
+        "https://www.who.int/news/item/05-05-2023-statement-on-the-fifteenth-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-coronavirus-disease-(covid-19)-pandemic"
+      ],
+      "citation_correct": true,
+      "latency_ms": 22.53,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence records that the exact state asserted by the claim has been replaced by a newer state.; Evidence records that the exact state asserted by the claim has been replaced by a newer state. (conflict type: superseded)."
+    },
+    {
+      "id": "who_conflicting",
+      "category": "contradictory_information",
+      "claim": "COVID-19 no longer constitutes a public health emergency of international concern.",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED",
+      "correct": false,
+      "confidence": 0.8087,
+      "evidence_quality": 0.8877,
+      "supporting": 4,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://www.who.int/emergencies/diseases/novel-coronavirus-2019",
+        "https://www.who.int/news/item/05-05-2023-statement-on-the-fifteenth-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-coronavirus-disease-(covid-19)-pandemic",
+        "https://who-deprecation-watch.example.org/status",
+        "https://who-maintainers.example.net/notices"
+      ],
+      "citation_correct": true,
+      "latency_ms": 25.19,
+      "cost_usd": 0.0,
+      "explanation": "4 source(s) across 3 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "who_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The pandemic preparedness review at a private hospital chain in Pune was approved by four clinicians on 6 May.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 15.88,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "who_contradicted2",
+      "category": "contradictory_information",
+      "claim": "The WHO states that COVID-19 was declared a public health emergency of international concern in 2024.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7255,
+      "evidence_quality": 0.4421,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://www.who.int/emergencies/diseases/novel-coronavirus-2019",
+        "https://www.who.int/news/item/05-05-2023-statement-on-the-fifteenth-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-coronavirus-disease-(covid-19)-pandemic"
+      ],
+      "citation_correct": true,
+      "latency_ms": 21.13,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=False, evidence negated=True).; Evidence asserts the opposite polarity to the claim (claim negated=False, evidence negated=True). (conflict type: polarity)."
+    },
+    {
+      "id": "gemini_current",
+      "category": "current_information",
+      "claim": "Gemini 1.5 Pro was announced with a 1 million token context window.",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED",
+      "correct": true,
+      "confidence": 0.783,
+      "evidence_quality": 0.6365,
+      "supporting": 2,
+      "contradicting": 0,
+      "cited_urls": [
+        "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/",
+        "https://deepmind.google/technologies/gemini/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 20.59,
+      "cost_usd": 0.0,
+      "explanation": "2 source(s) across 2 independent domain(s) state the same fact with compatible values, and no credible source contradicts it."
+    },
+    {
+      "id": "gemini_outdated",
+      "category": "outdated_information",
+      "claim": "Gemini 1.5 Pro has a context window of 32,000 tokens.",
+      "gold": "OUTDATED",
+      "predicted": "OUTDATED",
+      "correct": true,
+      "confidence": 0.7731,
+      "evidence_quality": 0.4308,
+      "supporting": 1,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/",
+        "https://medium.com/@ainotes/gemini-context",
+        "https://deepmind.google/technologies/gemini/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 22.7,
+      "cost_usd": 0.0,
+      "explanation": "Credible, more recent evidence shows this claim described an earlier state that has since been superseded. The claim references 1.5; current evidence indicates 32,000."
+    },
+    {
+      "id": "gemini_contradicted",
+      "category": "contradictory_information",
+      "claim": "Google states that Gemini 1.5 Pro does not accept text inputs.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7075,
+      "evidence_quality": 0.279,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/",
+        "https://deepmind.google/technologies/gemini/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 20.69,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False).; Evidence asserts the opposite polarity to the claim (claim negated=True, evidence negated=False). (conflict type: polarity)."
+    },
+    {
+      "id": "gemini_conflicting",
+      "category": "contradictory_information",
+      "claim": "Gemini 1.5 Pro has a context window of 1 million tokens.",
+      "gold": "CONFLICTING",
+      "predicted": "CONFLICTING",
+      "correct": true,
+      "confidence": 0.7219,
+      "evidence_quality": 0.5551,
+      "supporting": 2,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://gemini-deprecation-watch.example.org/status",
+        "https://gemini-maintainers.example.net/notices",
+        "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/",
+        "https://deepmind.google/technologies/gemini/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 25.47,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources disagree. Supporting and contradicting evidence are both substantive and come from independent domains, and recency does not resolve the disagreement, so it is reported as unresolved rather than averaged away."
+    },
+    {
+      "id": "gemini_insufficient",
+      "category": "insufficient_evidence",
+      "claim": "The Gemini 1.5 Pro pilot at a private logistics firm in Nashik was approved by five engineers on 1 March.",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED",
+      "correct": true,
+      "confidence": 0.465,
+      "evidence_quality": 0.1,
+      "supporting": 0,
+      "contradicting": 0,
+      "cited_urls": [],
+      "citation_correct": false,
+      "latency_ms": 15.27,
+      "cost_usd": 0.0,
+      "explanation": "No retrieved source addresses this claim directly enough to confirm or refute it. EPOCH returns UNVERIFIED rather than guessing."
+    },
+    {
+      "id": "gemini_contradicted2",
+      "category": "contradictory_information",
+      "claim": "Google states that Gemini 1.5 Pro is limited to a 4,096 token context window.",
+      "gold": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "correct": true,
+      "confidence": 0.7141,
+      "evidence_quality": 0.3364,
+      "supporting": 0,
+      "contradicting": 2,
+      "cited_urls": [
+        "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/",
+        "https://deepmind.google/technologies/gemini/"
+      ],
+      "citation_correct": true,
+      "latency_ms": 21.68,
+      "cost_usd": 0.0,
+      "explanation": "Credible sources state an incompatible value: Numeric disagreement: claim says 4,096, evidence says 1.5.; Numeric disagreement: claim says 4,096, evidence says 1.5. (conflict type: numeric)."
+    }
+  ],
+  "baseline_predictions": [
+    {
+      "id": "python_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "python_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "python_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "python_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "python_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "python_partial",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "react_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "react_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "react_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "react_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "react_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "react_partial",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "node_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "node_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "node_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "node_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "node_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "node_partial",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "postgres_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "postgres_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "postgres_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "postgres_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "postgres_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "postgres_partial",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "tailwind_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "tailwind_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "tailwind_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "tailwind_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "tailwind_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "tailwind_partial",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "vite_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "vite_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "vite_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "vite_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "vite_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "vite_partial",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "django_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "django_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "django_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "django_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "django_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "django_partial",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "kubernetes_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "kubernetes_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "kubernetes_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "kubernetes_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "kubernetes_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "kubernetes_partial",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "ubuntu_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "ubuntu_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "ubuntu_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "ubuntu_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "ubuntu_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "ubuntu_partial",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "java_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "java_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "java_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "java_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "java_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "java_partial",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "http_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "http_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "http_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "http_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "http_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "http_partial",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "tls_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "tls_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "tls_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "tls_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "tls_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "tls_partial",
+      "gold": "PARTIALLY_OUTDATED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "gpt4_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "gpt4_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "gpt4_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "gpt4_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "gpt4_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "gpt4_contradicted2",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "everest_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "everest_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "everest_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "everest_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "everest_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "everest_contradicted2",
+      "gold": "CONTRADICTED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "metre_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "metre_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "metre_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "metre_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "metre_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "metre_contradicted2",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "euaiact_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "euaiact_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "euaiact_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "euaiact_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "euaiact_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "euaiact_contradicted2",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "gdpr_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "gdpr_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "gdpr_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "gdpr_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "gdpr_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "gdpr_contradicted2",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "who_current",
+      "gold": "VERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "who_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "who_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "who_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "who_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "who_contradicted2",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "gemini_current",
+      "gold": "VERIFIED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "gemini_outdated",
+      "gold": "OUTDATED",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "gemini_contradicted",
+      "gold": "CONTRADICTED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "gemini_conflicting",
+      "gold": "CONFLICTING",
+      "predicted": "VERIFIED"
+    },
+    {
+      "id": "gemini_insufficient",
+      "gold": "UNVERIFIED",
+      "predicted": "UNVERIFIED"
+    },
+    {
+      "id": "gemini_contradicted2",
+      "gold": "CONTRADICTED",
+      "predicted": "VERIFIED"
+    }
+  ],
+  "notes": [
+    "Deterministic fixture retrieval is used so the benchmark is reproducible: it measures the reasoning engine, not web-search variance.",
+    "Labels were assigned from dataset construction semantics, independently of engine output.",
+    "In live mode (--live) evidence would come from Tavily and cost/latency figures would reflect it."
+  ],
+  "calibration": {
+    "a": 1.30319,
+    "b": 1.771166,
+    "c": -0.033593,
+    "trained_on": "epoch-benchmark-v1",
+    "n": 114,
+    "brier_score": 0.144963
+  }
+}
